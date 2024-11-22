@@ -1,7 +1,7 @@
 import React from 'react';
 import offer_bg from "../Assets/offer_bg.png";
 import offer_logo from "../Assets/offer_logo.png";
-import offer_bg2 from "../Assets/offer_bg2.png";
+
 import gallery1 from "../Assets/gallery1.png";
 import gallery2 from "../Assets/gallery2.png";
 import gallery3 from "../Assets/gallery3.png";

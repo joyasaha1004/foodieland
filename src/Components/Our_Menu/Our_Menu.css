@@ -3,11 +3,8 @@
 @tailwind utilities;
 
 
-@layer components{
-    .imglist{
-        @apply h-[107px] w-[170px] sm:h-[120px] md:w-[250px] md:h-[150px] lg:w-[300px] lg:h-[170px] xxl:w-[700px] xxl:h-[230px]
+@layer components {
+    .btn-primary {
+      @apply ;
     }
-    .link{
-        @apply hover:bg-amber border border rounded-md w-[85px] text-center h-[28px] pt-1 hover:text-stone hover:border-amber sm:w-[100px] md:w-[120px] lg:h-[35px] lg:w-[140px] xxl:h-[45px] xxl:w-[160px] xxl:pt-2
-    }
-}
+  }

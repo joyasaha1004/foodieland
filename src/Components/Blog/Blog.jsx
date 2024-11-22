@@ -73,8 +73,6 @@ const Blog = () => {
      
         responsive: [
 
-         
-         
           {
             breakpoint: 1499,
             settings: {
