@@ -1,5 +1,6 @@
 import React from 'react'; 
 import bg1 from "../Assets/bg1.jpg";
+import {useState} from "react"
 import Slider from "react-slick";
 import food10 from "../Assets/food10.png";
 import food13 from "../Assets/food13.png";
@@ -21,8 +22,52 @@ import party from "../Assets/party.png";
 import event from "../Assets/event.png";
 import checkbox from "../Assets/check-box.svg"
 
+// const PlateList = [
+//     {
+//         img:plate1
+//     },
+//     {
+//         img:plate2
+//     },
+//     {
+//         img:plate3
+//     },
+//     {
+//         img:food10
+//     }
+// ]
 
 const Hero = () => {
+
+    const [nav1, setNav1] = useState(null);
+    const [nav2, setNav2] = useState(null);
+  
+    const mainSliderSettings = {
+      asNavFor: nav2,
+      ref: (slider) => setNav1(slider),
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+    };
+  
+  
+    const thumbSliderSettings = {
+      asNavFor: nav1,
+      ref: (slider) => setNav2(slider),
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      focusOnSelect: true,
+      centerMode:false,
+      centerPadding: "130px",
+      initialSlide: 0,
+      dots: false,
+      infinite: false,
+      arrows: false,
+     }
+    const images = [plate1, plate2, plate3,food10];
+  
 
     var settings = {
         dots: false,
@@ -38,59 +83,39 @@ const Hero = () => {
        
      } ;
     return (
-        <div className="w-[300px] relative sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px]">
+        <div className="w-[300px] relative  sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] overflow-x-hidden ">
          <div className="">
-             <div>
-                 <img src={bg1} className="w-[300px] h-[470px] 
+             <div className="">
+                 <img src={bg1} className="w-[300px] h-[600px] 
                  brightness-[0.2] sm:w-[500px] md:w-[700px] md:h-[430px] lg:w-[1000px] lg:h-[450px] xl:w-[1280px] xl:h-[480px] xxl:w-[1600px] xxl:h-[540px]"></img>
              </div>
 
-            <div className=" -mt-[420px] ml-16 md:-mt-[370px] md:ml-[360px] lg:ml-[530px] xl:-mt-[390px] xl:ml-[540px] xxl:-mt-[420px] xxl:ml-[550px]"
+            <div className=" -mt-[520px] ml-16 md:-mt-[370px] md:ml-[360px] lg:ml-[530px] xl:-mt-[390px] xl:ml-[540px] xxl:-mt-[420px] xxl:ml-[550px]"
            
             >
-                <Slider {...settings} className="xxl:ml-52">
-
-                
-                       <div className="relative sm:ml-24  md:mt-7 lg:ml-40 xl:ml-64 lg:mt-9 xxl:"
-                         data-aos="zoom-in"
+                <Slider {...mainSliderSettings} className="xxl:ml-52">
+                    {images.map((image,index) =>(
+                         <div className="relative sm:ml-24 pb-40 md:mt-7 lg:ml-40 xl:ml-64 lg:mt-9 "
+                         data-aos="zoom-in" key={index}
                        >
                            <div>
-                               <img src={food10} className="w-[200px] sm:w-[215px] lg:w-[250px] xl:w-[310px] xxl:w-[340px]"></img>
+                               <img src={image} alt={`Slide ${index + 1}`} style={{ width: "80%" }}  className=""></img>
                            </div>
                            <div className="border border-stone bg-amber w-10 h-10 rounded-full ml-28 -mt-32 relative sm:-mt-[130px] sm:ml-32  lg:w-12 lg:h-12 lg:ml-36 lg:-mt-[150px] xl:ml-48 xl:-mt-[180px] xxl:ml-52 xxl:-mt-[205px]">
                                <p className="text-orange text-xs ml-2 mt-0.5 lg:ml-2.5 lg:text-sm">20% Off</p>
                            </div>
                            </div> 
 
-                           <div className="ml-3 mt-2 sm:ml-24 md:mt-9 lg:ml-40 xl:ml-64 lg:mt-10">
-                           <div className="">
-                               <img src={food13} className="w-[160px] sm:w-[190px] lg:w-[220px] xl:w-[267px] xxl:w-[287px]"></img>
-                           </div>
-                           <div className="border border-stone bg-amber w-10 h-10 rounded-full ml-[95px] -mt-[110px] absolute sm:-mt-[120px] sm:ml-28 lg:ml-32 lg:-mt-[142px] lg:w-12 lg:h-12 xl:ml-44 xl:-mt-[165px] xxl:-mt-[180px]">
-                               <p className="text-orange text-xs ml-2 lg:text-sm lg:ml-2.5">20% Off</p>
-                           </div>
-                           </div> 
+                    ))}
 
-                         <div className="lg:ml-16 xl:ml-40">
-                           <div className="sm:ml-24 md:mt-7">
-                               <img src={food12} className="w-[200px] sm:w-[225px] lg:w-[250px] lg:w-[260px] xl:w-[310px]
-
-                               xxl:w-[350px]"></img>
-                           </div>
-                           <div className="border border-stone bg-amber  w-10 h-10 rounded-full ml-28 -mt-32 relative sm:-mt-[130px] sm:ml-56 lg:w-12 lg:h-12 lg:-mt-[150px] lg:ml-60 xl:ml-72 xl:-mt-[174px] xxl:-mt-[195px] xxl:ml-80">
-                               <p className="text-orange text-xs ml-2 lg:text-sm lg:ml-2.5">20% Off</p>
-                           </div>
-                           </div> 
-
-                 
-
+            
                 </Slider>
 
-                <div className="relative mt-5 mx-1 md:-mt-44 md:w-[350px] md:-ml-72 lg:w-[450px] lg:-ml-[450px] lg:-mt-52 xl:-mt-60 xxl:-mt-72">
+                <div className="relative -mt-7 mx-1 md:-mt-44 md:w-[350px] md:-ml-72 lg:w-[450px] lg:-ml-[450px]  lg:-mt-52 xl:-mt-60 xxl:-mt-72">
                    <div className="text-stone -ml-12 mt-5 xl:w-[600px] xxl:w-[720px]">
-                       <h3 className="text-2xl font-semibold md:text-4xl 
-                       md:leading-snug lg:text-5xl lg:leading-snug xl:text-[55px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
-                       <p className="text-xs mt-2 lg:text-sm xxl:text-base">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
+                       <h3 className="text-3xl font-bold md:text-4xl 
+                       leading-snug lg:text-5xl lg:leading-snug xl:text-[55px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
+                       <p className="text-sm leading-normal mt-2 lg:text-sm xxl:text-base">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
                    </div>
 
                    <div className="mt-4 flex -ml-10 gap-2 relative">
@@ -101,11 +126,17 @@ const Hero = () => {
                      
                    </div>
                      
-                   <div className="flex -ml-60 -mt-44 sm:-mt-[340px] sm:-ml-[400px] md:-mt-[320px] lg:-mt-[340px] md:-ml-[390px]">
-                       <img src={plate1} className="p-[195px] sm:p-[370px] md:p-[335px] lg:p-[365px] "></img>
-                       <img src={plate2} className="p-[197px] -ml-[410px] sm:p-[372px] sm:-ml-[757px] md:p-[337px] md:-ml-[690px] lg:p-[368px] lg:-ml-[750px]"></img>
-                       <img src={plate3} className="p-[193px] -ml-[410px] sm:p-[367px] sm:-ml-[757px] md:p-[333px] md:-ml-[690px] lg:p-[361px] lg:-ml-[750px]"></img>
-                       <img src={food10} className="p-[188px] -ml-[410px] sm:p-[363px] sm:-ml-[757px] md:p-[330px] md:-ml-[690px] lg:p-[355px] lg:-ml-[750px]"></img>
+                   <div className="flex -ml-0  md:-ml-[390px]"> 
+                     
+                     <Slider {...thumbSliderSettings}>
+                     {images.map((image,index)=>{
+
+          <div key={index} className="">
+             <img src={image} alt={`Thumbnail ${index + 1}`} className="" />
+            </div>
+                     })}
+
+                     </Slider>
                    </div> 
                 </div>
            
@@ -113,8 +144,8 @@ const Hero = () => {
              </div>
              </div> 
 
-             <div className="relative lg:-mt-10">
-                 <div className="-mt-44 sm:-mt-[342px] md:-mt-[300px] lg:-mt-[355px] xl:-mt-[355px]">
+             <div className="mt-[700px] lg:-mt-10">
+                 <div className="">
                      <img src={restaurant_bg} className="contrast-[0.25] sm:w-[500px] h-[360px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] xl:h-[420px] xxl:h-[430px]"></img>
                  </div>
                  <div className="relative -mt-[350px] lg:-ml-5 xl:ml-32 xl:-mt-[395px] xxl:-mt-[410px]">
