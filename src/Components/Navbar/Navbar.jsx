@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Navbar.css"
 
 
 import logo_food from "../Assets/logo_food.png";
@@ -18,9 +19,9 @@ const Navbar = () => {
     console.log(isMenuOpen)
   
     return (
-        <div className="w-[300px] bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px]">
+        <div className="w-[300px] bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] overflow-x-hidden">
             <div className="flex pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
-             <div className=" -mt-1 font-sans xxl:ml-7
+             <div className="-ml-2 -mt-1 font-sans xxl:ml-7
                 flex 
                ">
                     <img src={logo_food} className="w-16 h-10 lg:w-16 lg:h-12 xl:w-20 xl:h-12 xl:mt-2 xxl:mt-2.5"></img>
@@ -28,14 +29,14 @@ const Navbar = () => {
                    text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
                 </div>
 
-               <div>
-                   <ul className="text-stone flex opacity-0 lg:opacity-100 lg:text-base lg:ml-80 lg:gap-8 lg:mt-1 xl:mt-3 xl:ml-[480px]
+               <div className="">
+                   <ul className="text-stone nav-list flex  opacity-0  lg:opacity-100 lg:text-base lg:ml-80 lg:gap-8 lg:mt-1 xl:mt-3 xl:ml-[480px]
                    xl:text-lg xl:gap-10 xxl:ml-[670px] xxl:text-xl xxl:gap-12">
-                       <li className="cursor-pointer hover:text-amber"><Link to="/foodieland">Home</Link></li>
-                       <li className="cursor-pointer hover:text-amber"><Link to="/offer">Offer</Link></li>
-                       <li className="cursor-pointer hover:text-amber"><Link to="/menu">Menu</Link></li>
-                       <li className="cursor-pointer hover:text-amber"><Link to="/reservation">Reservation</Link></li>
-                       <li className="cursor-pointer hover:text-amber"><Link to="/contact">Contact</Link></li>
+                       <li><Link to="/foodieland">Home</Link></li>
+                       <li><Link to="/offer">Offer</Link></li>
+                       <li><Link to="/menu">Menu</Link></li>
+                       <li><Link to="/reservation">Reservation</Link></li>
+                       <li><Link to="/contact">Contact</Link></li>
                    </ul>
                </div>
               
@@ -50,12 +51,14 @@ const Navbar = () => {
             </div>
 
             {isMenuOpen?(
-                <ul className="font-semibold mt-5 text-center text-stone ">
-                   <li className="cursor-pointer mb-2 hover:text-amber"><Link to="/foodieland">Home</Link></li>
-                        <li className="cursor-pointer mb-2 hover:text-amber"><Link to="/offer">Offer</Link></li>
-                        <li className="cursor-pointer mb-2 hover:text-amber"><Link to="/menu">Menu</Link></li> 
-                        <li className="cursor-pointer mb-2 hover:text-amber"><Link to="/reservation">Reservation</Link></li>
-                        <li className="cursor-pointer pb-2 hover:text-amber"><Link to="/contact">Contact</Link></li>
+                <ul className="font-semibold phone-nav  mt-5 text-center text-stone">
+                   <li className=""><Link to="/foodieland">Home</Link></li>
+                  <li className=""><Link to="/offer">Offer</Link></li>
+
+                  <li className=""><Link to="/menu">Menu</Link></li> 
+                 <li className=""><Link to="/reservation">Reservation</Link></li>
+                   <li className=""><Link to="/contact">Contact</Link></li>
+                        
                 </ul>
             ):null
 
