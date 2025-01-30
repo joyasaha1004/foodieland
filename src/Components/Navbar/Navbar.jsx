@@ -20,9 +20,9 @@ const Navbar = () => {
   
     return (
         <div className="bg-black overflow-x-hidden ">
-            <div className="flex pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
+            {/* <div className="grid grid-cols-2  pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
              <div className="-ml-2 -mt-1 font-sans xxl:ml-7 flex ">
-                    <img src={logo_food} className="w-16 h-10 lg:w-16 lg:h-12 xl:w-20 xl:h-12 xl:mt-2 xxl:mt-2.5"></img>
+                    <img src={logo_food} className=""></img>
                   <h1 className="font-bold text-md mt-2 -ml-4 lg:text-lg
                    text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
                 </div>
@@ -43,13 +43,39 @@ const Navbar = () => {
                 <button onClick={toggleMenu} className="">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6 ml-64 mt-1 lg:hidden">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-</svg>
-    
-                </button>
-            </div>
+   </svg>
+     </button>
+            </div> */}
+            <div className="grid grid-cols-3 relative -left-3 mt-1 h-12">
+
+                <div className="flex font-sans ">
+                    <img src={logo_food} className="h-[44px]"></img>
+                    <h1 className="font-bold text-md mt-2 -ml-4 lg:text-lg
+                   text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
+                </div>
+
+                <div className="text-center opacity-0">
+                   <ul className=" nav-list  lg:text-base lg:mt-1 xl:mt-3 
+                   xl:text-lg xxl:text-xl xxl:gap-12">
+                       <li><Link to="/foodieland">Home</Link></li>
+                       <li><Link to="/offer">Offer</Link></li>
+                       <li><Link to="/menu">Menu</Link></li>
+                       <li><Link to="/reservation">Reservation</Link></li>
+                       <li><Link to="/contact">Contact</Link></li>
+                   </ul>
+               </div> 
+
+               <div className="px-20 py-0.5 sm:px-32">
+               {/* <button  className=""> */}
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" onClick={toggleMenu} className="size-6  mt-1 lg:hidden">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
+   </svg>
+     {/* </button> */}
+                   </div>  
+                </div>
 
             {isMenuOpen?(
-                <ul className="font-semibold phone-nav  mt-5 text-center text-stone">
+                <ul className="font-semibold phone-nav   mt-5 text-center text-stone">
                    <li className=""><Link to="/foodieland">Home</Link></li>
                   <li className=""><Link to="/offer">Offer</Link></li>
 
