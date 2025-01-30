@@ -19,11 +19,9 @@ const Navbar = () => {
     console.log(isMenuOpen)
   
     return (
-        <div className="w-[300px] bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1500px] xxl:w-[1800px] overflow-x-hidden">
-            <div className="flex pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
-             <div className="-ml-2 -mt-1 font-sans xxl:ml-7
-                flex 
-               ">
+        <div className="bg-black overflow-x-hidden">
+            <div className="flex w-3/4 pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
+             <div className="-ml-2 -mt-1 font-sans xxl:ml-7 flex ">
                     <img src={logo_food} className="w-16 h-10 lg:w-16 lg:h-12 xl:w-20 xl:h-12 xl:mt-2 xxl:mt-2.5"></img>
                   <h1 className="font-bold text-md mt-2 -ml-4 lg:text-lg
                    text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
