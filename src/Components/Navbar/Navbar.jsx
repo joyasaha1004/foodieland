@@ -19,7 +19,7 @@ const Navbar = () => {
     console.log(isMenuOpen)
   
     return (
-        <div className="bg-black overflow-x-hidden ">
+        <div className="bg-black overflow-x-hidden w-full">
             {/* <div className="grid grid-cols-2  pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
              <div className="-ml-2 -mt-1 font-sans xxl:ml-7 flex ">
                     <img src={logo_food} className=""></img>
@@ -46,16 +46,17 @@ const Navbar = () => {
    </svg>
      </button>
             </div> */}
-            <div className="grid grid-cols-3 relative -left-3 mt-1 h-12">
+            <div className="grid grid-cols-3 relative -left-2 flex mt-1  h-12 lg:left-0
+            ">
 
                 <div className="flex font-sans ">
                     <img src={logo_food} className="h-[44px]"></img>
                     <h1 className="font-bold text-md mt-2 -ml-4 lg:text-lg
-                   text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
+                   text-green xl:text-xl  xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
                 </div>
 
-                <div className="text-center opacity-0">
-                   <ul className=" nav-list  lg:text-base lg:mt-1 xl:mt-3 
+                <div className="text-center opacity-0 lg:opacity-100 ">
+                   <ul className=" nav-list lg:text-base flex text-stone gap-x-10 lg:mt-3 xl:mt-3 
                    xl:text-lg xxl:text-xl xxl:gap-12">
                        <li><Link to="/foodieland">Home</Link></li>
                        <li><Link to="/offer">Offer</Link></li>
@@ -65,7 +66,7 @@ const Navbar = () => {
                    </ul>
                </div> 
 
-               <div className="px-20 py-0.5 sm:px-32">
+               <div className="py-0.5 justify-items-end">
                {/* <button  className=""> */}
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" onClick={toggleMenu} className="size-6  mt-1 lg:hidden">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
@@ -75,7 +76,7 @@ const Navbar = () => {
                 </div>
 
             {isMenuOpen?(
-                <ul className="font-semibold phone-nav   mt-5 text-center text-stone">
+                <ul className="font-semibold phone-nav  mt-5 text-center text-stone">
                    <li className=""><Link to="/foodieland">Home</Link></li>
                   <li className=""><Link to="/offer">Offer</Link></li>
 
