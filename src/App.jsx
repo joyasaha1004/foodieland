@@ -28,17 +28,18 @@ function App() {
   return (
     <>
     <Navbar/>
-    <Routes>
-  <Route path="/foodieland" element={<Home/>}/>
-  <Route path="/" element={<Home/>}/>
+    {/* <Routes>
+    <Route path="/foodieland" element={<Home/>}/> */}
+    {/* <Route path="/" element={<Home/>}/>
     <Route path="/offer" element={<Offer/>}/>
-    <Route path="/menu" element={<Menu/>}/>
+    <Route path="/menu" element={<Menu/>}/> */}
    
-   <Route path="/reservation" element={<Reservation/>}/>
-    <Route path="/contact" element={<Contact/>}/>
+    {/* <Route path="/reservation" element={<Reservation/>}/>
+    <Route path="/contact" element={<Contact/>}/> */}
   
-  </Routes>
-  <Footer/>
+     {/* </Routes> */}
+  
+  {/* <Footer/> */}
     </>
   )
 }

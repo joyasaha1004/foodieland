@@ -19,7 +19,7 @@ const Navbar = () => {
     console.log(isMenuOpen)
   
     return (
-        <div className="w-[300px] bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] overflow-x-hidden">
+        <div className="w-[300px] bg-black sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1500px] xxl:w-[1800px] overflow-x-hidden">
             <div className="flex pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
              <div className="-ml-2 -mt-1 font-sans xxl:ml-7
                 flex 

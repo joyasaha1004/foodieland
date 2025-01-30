@@ -9,6 +9,6 @@
         @apply cursor-pointer hover:text-amber
     }
     .phone-nav li{
-        @apply cursor-pointer mb-6 hover:text-amber
+        @apply cursor-pointer   hover:text-amber
     }
   }
