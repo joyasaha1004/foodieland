@@ -83,7 +83,7 @@ const Hero = () => {
        
      } ;
     return (
-        <div className="w-[300px] relative  sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] overflow-x-hidden ">
+        <div className=" relative w-full overflow-x-hidden ">
          <div className="">
              <div className="">
                  <img src={bg1} className="w-[300px] h-[600px] 

@@ -20,32 +20,10 @@ const Navbar = () => {
   
     return (
         <div className="bg-black overflow-x-hidden w-full px-2">
-            {/* <div className="grid grid-cols-2  pt-3 drop-shadow-xl h-[55px] xl:h-[70px]">
-             <div className="-ml-2 -mt-1 font-sans xxl:ml-7 flex ">
-                    <img src={logo_food} className=""></img>
-                  <h1 className="font-bold text-md mt-2 -ml-4 lg:text-lg
-                   text-green xl:text-xl xl:mt-4 xxl:text-2xl">Foodie<span className="text-amber">Land</span></h1>
-                </div>
-
-               <div className="">
-                   <ul className="text-stone nav-list flex  opacity-0  lg:opacity-100 lg:text-base lg:ml-80 lg:gap-8 lg:mt-1 xl:mt-3 
-                   xl:text-lg xl:gap-10 xxl:text-xl xxl:gap-12">
-                       <li><Link to="/foodieland">Home</Link></li>
-                       <li><Link to="/offer">Offer</Link></li>
-                       <li><Link to="/menu">Menu</Link></li>
-                       <li><Link to="/reservation">Reservation</Link></li>
-                       <li><Link to="/contact">Contact</Link></li>
-                   </ul>
-               </div>
+           
               
                 
-                
-                <button onClick={toggleMenu} className="">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="size-6 ml-64 mt-1 lg:hidden">
-  <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
-   </svg>
-     </button>
-            </div> */}
+             
             <div className="grid grid-cols-3 relative -left-3 flex mt-1  h-12 xl:h-16 xl:pt-2 xl:-left-1
             ">
                
@@ -67,11 +45,11 @@ const Navbar = () => {
                </div>
 
                <div className="py-0.5 justify-items-end">
-               {/* <button  className=""> */}
+             
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" onClick={toggleMenu} className="size-6  mt-1 xl:hidden">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
    </svg>
-     {/* </button> */}
+   
                    </div>  
                 </div>
 
