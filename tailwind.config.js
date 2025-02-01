@@ -25,7 +25,13 @@ export default {
     fontFamily:{
      serif :["Dancing Script" ,"serif"]
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'hero-pattern': "url('../Assets/bg1.jpg')",
+        'restaurant-pic' : "url('../Assets/restaurant_bg.png')"
+       
+      }
+    },
   },
   plugins: [],
 }

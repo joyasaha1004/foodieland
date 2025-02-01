@@ -83,25 +83,25 @@ const Hero = () => {
        
      } ;
     return (
-        <div className=" relative w-full overflow-x-hidden ">
+        <div className=" w-full overflow-x-hidden ">
          <div className="">
-             <div className="">
-                 <img src={bg1} className="w-[300px] h-[600px] 
-                 brightness-[0.2] sm:w-[500px] md:w-[700px] md:h-[430px] lg:w-[1000px] lg:h-[450px] xl:w-[1280px] xl:h-[480px] xxl:w-[1600px] xxl:h-[540px]"></img>
-             </div>
-
-            <div className=" -mt-[520px] ml-16 md:-mt-[370px] md:ml-[360px] lg:ml-[530px] xl:-mt-[390px] xl:ml-[540px] xxl:-mt-[420px] xxl:ml-[550px]"
+        
+             <div className="relative h-[550px] bg-hero-pattern bg-cover bg-center sm:h-[500px] lg:h-[460px] xl:h-[500px] 
+              ">
+                  <div className="absolute inset-0 bg-black opacity-50 "></div>
+                
            
-            >
-                <Slider {...mainSliderSettings} className="xxl:ml-52">
+
+            <div className="pt-20 lg:mb-60 lg:grid lg:grid-cols-3 lg:pt-28 lg:pl-10 lg:gap-7 xl:pt-36">
+               
+                <Slider {...mainSliderSettings} className="lg:mt-2">
                     {images.map((image,index) =>(
-                         <div className="relative sm:ml-24 pb-40 md:mt-7 lg:ml-40 xl:ml-64 lg:mt-9 "
-                         data-aos="zoom-in" key={index}
-                       >
-                           <div>
-                               <img src={image} alt={`Slide ${index + 1}`} style={{ width: "80%" }}  className=""></img>
-                           </div>
-                           <div className="border border-stone bg-amber w-10 h-10 rounded-full ml-28 -mt-32 relative sm:-mt-[130px] sm:ml-32  lg:w-12 lg:h-12 lg:ml-36 lg:-mt-[150px] xl:ml-48 xl:-mt-[180px] xxl:ml-52 xxl:-mt-[205px]">
+                         <div className="relative  mb-10 place-items-center"
+                         data-aos="zoom-in" key={index} >
+                         
+                               <img src={image} alt={`Slide ${index + 1}`} style={{ width: "" }}  className="relative w-60"></img>
+                          
+                           <div className="border border-stone bg-amber w-10 h-10 rounded-full absolute top-2 left-[54%] lg:w-12 h-12">
                                <p className="text-orange text-xs ml-2 mt-0.5 lg:ml-2.5 lg:text-sm">20% Off</p>
                            </div>
                            </div> 
@@ -110,23 +110,24 @@ const Hero = () => {
 
             
                 </Slider>
-
-                <div className="relative -mt-7 mx-1 md:-mt-44 md:w-[350px] md:-ml-72 lg:w-[450px] lg:-ml-[450px]  lg:-mt-52 xl:-mt-60 xxl:-mt-72">
-                   <div className="text-stone -ml-12 mt-5 xl:w-[600px] xxl:w-[720px]">
-                       <h3 className="text-3xl font-bold md:text-4xl 
-                       leading-snug lg:text-5xl lg:leading-snug xl:text-[55px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
+   
+                <div className="relative px-2 sm:px-4 lg:col-span-2">
+                   <div className="text-stone ">
+                       <h3 className="text-2xl font-bold md:text-3xl 
+                       leading-snug lg:text-5xl lg:leading-snug xl:text-[50px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
                        <p className="text-sm leading-normal mt-2 lg:text-sm xxl:text-base">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
                    </div>
 
-                   <div className="mt-4 flex -ml-10 gap-2 relative">
+                   <div className="mt-4 flex  gap-2 relative">
                        <button className="border-orange border-1 text-orange bg-amber text-xs p-2 rounded hover:bg-stone hover:border-orange hover:border-1 lg:text-sm 
                        cursor-pointer xl:text-base">View Our Menu</button>
                        
                        <button className="text-green border-green border p-2 text-xs rounded hover:bg-green hover:text-stone lg:text-sm cursor-pointer xxl:text-base">Reservation</button>
                      
                    </div>
+                   </div> {/* </div>  */}
                      
-                   <div className="flex -ml-0  md:-ml-[390px]"> 
+                   <div className="flex absolute -ml-0  md:-ml-[390px]"> 
                      
                      <Slider {...thumbSliderSettings}>
                      {images.map((image,index)=>{
@@ -144,23 +145,23 @@ const Hero = () => {
              </div>
              </div> 
 
-             <div className="mt-[700px] lg:-mt-10">
-                 <div className="">
-                     <img src={restaurant_bg} className="contrast-[0.25] sm:w-[500px] h-[360px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] xl:h-[420px] xxl:h-[430px]"></img>
-                 </div>
-                 <div className="relative -mt-[350px] lg:-ml-5 xl:ml-32 xl:-mt-[395px] xxl:-mt-[410px]">
-                     <div className="text-center pt-2 xl:-ml-[170px] ">
+             <div className="relative">
+                  {/* <div className="absolute contrast-50 inset-0">  */}
+                     <img src={restaurant_bg} className="contrast-[0.25] h-[400px] w-full xl:h-[460px] xxl:h-[500px]"></img>
+                 {/* </div> */}
+                 <div className="relative -top-96 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
+                     <div className="text-center pt-2 ">
                          <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone md:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
-                     <div className="pl-5 pt-3 sm:pt-5 md:pl-16 lg:pl-48 xl:pl-32 xxl:pl-44">
-                       <div className="sm:flex md:gap-3">
+                     <div className="place-items-center text-sm pt-3 sm:pt-5 px-2  lg:text-base xl:text-lg">
+                       <div className="sm:flex sm:gap-2 lg:gap-4">
                     <div>
-                        <input type="text" className="w-60 h-7 rounded text-center text-sm mb-5 ml-2 sm:w-40 md:w-44 lg:w-52 lg:h-8 lg:text-base xl:w-72 xl:h-9 hover:border-2 hover:border-amber xl:text-lg xxl:w-[360px] xxl:h-10" placeholder="Name"></input>
+                        <input type="text" className="w-full h-7 rounded text-center sm:mt-5  mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
                     </div>
-                     <div className="text-sm sm:ml-2 flex md:gap-3 lg:text-base xl:text-lg -ml-2">
+                     <div className=" flex flex-wrap gap-2 place-content-center relative">
                          <div>
-                         <select className="w-16 h-7 mr-3 rounded md:w-20 lg:w-20 lg:h-8 xl:w-24 hover:border-2 xxl:w-36 xl:h-9 xxl:h-10 hover:border-amber ">
+                         <select className=" h-7  rounded lg:h-8 xl:w-24 hover:border-2  xl:h-9 xxl:h-10 hover:border-amber ">
                              <option >Child</option>
                              <option value="1">1</option>
                              <option value="2">2</option>
@@ -175,7 +176,7 @@ const Hero = () => {
                          </select>
                            </div>
                            <div>
-                         <select className="w-16 h-7 mr-3 rounded md:w-20 lg:w-24 lg:h-8 xl:w-28 xl:text-lg hover:border-2 hover:border-amber xl:h-9 xxl:h-10 xxl:w-40">
+                         <select className=" h-7  rounded md:w-20 lg:w-24 lg:h-8 xl:w-28 hover:border-2 hover:border-amber xl:h-9 xxl:h-10 xxl:w-40">
                              <option >Person</option>
                              <option value="1">1</option>
                              <option value="2">2</option>
@@ -200,19 +201,19 @@ const Hero = () => {
                          </div>
                          </div>
  </div>
-                         <div className="">
-                       
-                         <textarea className="mt-5  w-64 rounded h-28 text-sm pl-2 sm:w-[440px] sm:ml-2 md:w-[525px] pt-1 lg:text-base lg:w-[590px] xl:w-[715px] xl:h-36 xl:text-lg hover:border-2 hover:border-amber xxl:w-[890px]" placeholder="Special Message"></textarea>
                         
-                         </div>
-                     <button className="bg-black text-stone rounded ml-24 mt-2 p-2 text-sm hover:bg-amber sm:mt-4 sm:ml-52 md:ml-60 lg:ml-72 xl:text-lg xl:ml-80 xxl:ml-[420px]">Conform</button>
+                       <div>
+                         <textarea className="mt-5 w-screen sm:w-[450px] rounded h-28 text-center lg:w-[550px] xl:h-36 hover:border-2 xl:w-[600px] xxl:w-[700px] hover:border-amber " placeholder="Special Message"></textarea>
+                        </div>
+                         
+                     <button className="bg-black text-stone rounded mt-2 p-2 text-sm hover:bg-amber sm:mt-4  xl:text-lg ">Conform</button>
                      </div>
                  </div>
              </div>
 
 
 
-         <div className="bg-black relative mt-2 md:flex md:pt-10 md:gap-7
+         {/* <div className="bg-black   md:flex md:pt-10 md:gap-7
 
               md:-ml-20 lg:-ml-5 pb-7 xxl:pl-32">
                  <div className=" pt-10 pl-12 pb-5 sm:pl-40">
@@ -354,7 +355,7 @@ const Hero = () => {
                           
                        </div>
                    </div>
-               </div>
+               </div> */}
         </div>
     );
 };
