@@ -157,7 +157,7 @@ const Hero = () => {
                          <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
-                     <div className="place-items-center text-sm pt-3 sm:pt-5 sm:pt-0 px-2  lg:text-base xl:text-lg">
+                     <div className="place-items-center text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
                        <div className="md:flex flex-wrap sm:place-content-center sm:gap-2 lg:gap-4">
                     <div>
                         <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
