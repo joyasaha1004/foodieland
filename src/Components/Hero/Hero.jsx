@@ -83,7 +83,7 @@ const Hero = () => {
        
      } ;
     return (
-        <div className=" w-full overflow-x-hidden ">
+        <div className="bg-black w-full overflow-x-hidden ">
          <div className="">
         
              <div className="relative h-[550px] bg-hero-pattern bg-cover bg-center sm:h-[500px] lg:h-[460px] xl:h-[500px] 
@@ -101,8 +101,11 @@ const Hero = () => {
                          
                                <img src={image} alt={`Slide ${index + 1}`} style={{ width: "" }}  className="relative w-60"></img>
                           
-                           <div className="border border-stone bg-amber w-10 h-10 rounded-full absolute top-2 left-[54%] lg:w-12 h-12">
+                           {/* <div className="border border-stone bg-amber w-10 h-10 rounded-full absolute top-2 left-[54%] lg:w-12 h-12">
                                <p className="text-orange text-xs ml-2 mt-0.5 lg:ml-2.5 lg:text-sm">20% Off</p>
+                           </div> */}
+                           <div className="w-10 h-10 bg-amber rounded-full border border-stone absolute top-2 left-[54%]">
+                               <p className="text-xs text-orange text-center">20% Off</p>
                            </div>
                            </div> 
 
@@ -113,7 +116,7 @@ const Hero = () => {
    
                 <div className="relative px-2 sm:px-4 lg:col-span-2">
                    <div className="text-stone ">
-                       <h3 className="text-2xl font-bold md:text-3xl 
+                       <h3 className="text-3xl font-bold md:text-3xl 
                        leading-snug lg:text-5xl lg:leading-snug xl:text-[50px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
                        <p className="text-sm leading-normal mt-2 lg:text-sm xxl:text-base">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
                    </div>
@@ -152,12 +155,12 @@ const Hero = () => {
                  <div className="relative -top-96 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
                      <div className="text-center pt-2 ">
                          <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
-                         <span className="text-xl font-semibold text-stone md:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
+                         <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
-                     <div className="place-items-center text-sm pt-3 sm:pt-5 px-2  lg:text-base xl:text-lg">
-                       <div className="sm:flex sm:gap-2 lg:gap-4">
+                     <div className="place-items-center text-sm pt-3 sm:pt-5 sm:pt-0 px-2  lg:text-base xl:text-lg">
+                       <div className="md:flex flex-wrap sm:place-content-center sm:gap-2 lg:gap-4">
                     <div>
-                        <input type="text" className="w-full h-7 rounded text-center sm:mt-5  mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
+                        <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
                     </div>
                      <div className=" flex flex-wrap gap-2 place-content-center relative">
                          <div>
@@ -202,8 +205,8 @@ const Hero = () => {
                          </div>
  </div>
                         
-                       <div>
-                         <textarea className="mt-5 w-screen sm:w-[450px] rounded h-28 text-center lg:w-[550px] xl:h-36 hover:border-2 xl:w-[600px] xxl:w-[700px] hover:border-amber " placeholder="Special Message"></textarea>
+                       <div className="w-full md:w-[80%] lg:w-[60%] xxl:w-[50%]">
+                         <textarea className="mt-5 w-full rounded h-28 text-center  xl:h-36 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
                         </div>
                          
                      <button className="bg-black text-stone rounded mt-2 p-2 text-sm hover:bg-amber sm:mt-4  xl:text-lg ">Conform</button>
@@ -213,16 +216,14 @@ const Hero = () => {
 
 
 
-         {/* <div className="bg-black   md:flex md:pt-10 md:gap-7
-
-              md:-ml-20 lg:-ml-5 pb-7 xxl:pl-32">
-                 <div className=" pt-10 pl-12 pb-5 sm:pl-40">
+          <div className="relative -top-44 md:flex md:gap-7 overflow-x-hidden">
+                 <div className="pl-12 pb-5 sm:pl-40">
                  <div className="border-b-4 border-s-4 -ml-1 -mt-1  rotate-90 rounded border-orange w-20 h-20 absolute "></div>    
                      <img src={chef} className="w-48 h-56 relative md:w-52 md:h-64 lg:w-60 lg:h-72 xl:w-72 xl:h-[350px]"></img>
                      <div className="border-t-4 border-e-4 ml-28 -mt-20 rotate-90 rounded border-orange w-20 h-20 relative lg:ml-40 lg:-mt-20 xl:ml-52"></div>
                  </div>
 
-                 <div className="px-2 sm:px-4 md:pt-16 sm:w-[450px] lg:w-[450px] lg:pt-12 xl:ml-20 xl:w-[650px]">
+                 <div className="px-2 sm:px-4 md:pt-16 lg:pt-12 xl:ml-20 xl:w-[650px]">
                      <span className="text-amber text-sm sm:text-base lg:text-xl font-serif xl:text-3xl xl:mb-2">About Us</span>
                      <h3 className="text-stone text-xl font-semibold sm:text-2xl md:text-2xl lg:text-3xl lg:leading-snug xl:text-4xl xl:leading-relaxed xxl:text-5xl xxl:leading-[57px] ">Enjoy Your Favorite Food On Our Resturant</h3>
                      <p className="text-stone text-xs mt-1 lg:text-sm leading-relaxed lg:mt-4 lg:leading-loose xl:text-base xl:leading-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, sit commodi repudiandae possimus vero voluptate officia alias atque ut fugit similique dolore aliquid ducimus deleniti enim saepe id! Voluptatum.</p>
@@ -297,7 +298,7 @@ const Hero = () => {
 
 {/* party or event */}
 
-         <div className="bg-black pt-[620px] pb-5 md:pt-[350px] lg:pl-20 lg:pt-[400px] xl:pl-40 xxl:pt-[450px] xxl:pl-52">
+         {/* <div className="bg-black pt-[620px] pb-5 md:pt-[350px] lg:pl-20 lg:pt-[400px] xl:pl-40 xxl:pt-[450px] xxl:pl-52">
                    <div className="md:flex md:-ml-28 md:gap-7 xl:gap-9">
                        <div className="relative pl-9 gap-4 sm:pl-40">
                            <div>
@@ -355,7 +356,7 @@ const Hero = () => {
                           
                        </div>
                    </div>
-               </div> */}
+               </div>  */}
         </div>
     );
 };
