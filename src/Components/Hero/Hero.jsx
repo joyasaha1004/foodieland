@@ -83,7 +83,7 @@ const Hero = () => {
        
      } ;
     return (
-        <div className="bg-black w-full overflow-x-hidden ">
+        <div className="bg-black w-full overflow-x-hidden">
          <div className="">
         
              <div className="relative h-[550px] bg-hero-pattern bg-cover bg-center sm:h-[500px] lg:h-[460px] xl:h-[500px] 
@@ -148,16 +148,17 @@ const Hero = () => {
              </div>
              </div> 
 
-             <div className="relative">
-                  {/* <div className="absolute contrast-50 inset-0">  */}
-                     <img src={restaurant_bg} className="contrast-[0.25] h-[400px] w-full xl:h-[460px] xxl:h-[500px]"></img>
-                 {/* </div> */}
-                 <div className="relative -top-96 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
-                     <div className="text-center pt-2 ">
+             <div className="relative bg-restaurant-pic bg-cover h-[70vh] w-full lg:h-[400px] relative xl:h-[460px] ">
+                   
+                     {/* <img src={restaurant_bg} className="contrast-[0.25] h-[70vh] w-full xl:h-[460px] relative xxl:h-[500px]"></img> */}
+                     <div className="absolute inset-0 backdrop-contrast-[0.25]"></div>
+                
+                 <div className=" pt-4 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
+                     <div className="text-center pt-2 relative">
                          <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
-                     <div className="place-items-center text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
+                     <div className="justify-items-center w-full relative  text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
                        <div className="md:flex flex-wrap sm:place-content-center sm:gap-2 lg:gap-4">
                     <div>
                         <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
@@ -214,28 +215,36 @@ const Hero = () => {
                  </div>
              </div>
 
+ 
 
+          {/* <div className="-mt-40 overflow-x-hidden ">  
 
-          <div className="relative -top-44 md:flex md:gap-7 overflow-x-hidden">
-                 <div className="pl-12 pb-5 sm:pl-40">
-                 <div className="border-b-4 border-s-4 -ml-1 -mt-1  rotate-90 rounded border-orange w-20 h-20 absolute "></div>    
-                     <img src={chef} className="w-48 h-56 relative md:w-52 md:h-64 lg:w-60 lg:h-72 xl:w-72 xl:h-[350px]"></img>
-                     <div className="border-t-4 border-e-4 ml-28 -mt-20 rotate-90 rounded border-orange w-20 h-20 relative lg:ml-40 lg:-mt-20 xl:ml-52"></div>
+           
+
+              <div className="md:grid grid-cols-2 h-fit">
+                 <div className="place-items-center md:-ml-4">
+                 <div className="border-b-4 border-s-4 -ml-32 rotate-90 rounded border-orange w-20 h-20 "></div>
+
+                 <div className="-mt-[76px]">    
+                     <img src={chef} className="w-48 h-56 md:w-52 md:h-64 lg:w-60 lg:h-72 xl:w-72 xl:h-[350px]"></img>
+
+                     </div>
+                     <div className="border-t-4 border-e-4 ml-28 -mt-20 rotate-90 rounded border-orange w-20 h-20 relative md:ml-32 lg:ml-40 lg:-mt-20 xl:ml-52"></div>
                  </div>
 
-                 <div className="px-2 sm:px-4 md:pt-16 lg:pt-12 xl:ml-20 xl:w-[650px]">
-                     <span className="text-amber text-sm sm:text-base lg:text-xl font-serif xl:text-3xl xl:mb-2">About Us</span>
-                     <h3 className="text-stone text-xl font-semibold sm:text-2xl md:text-2xl lg:text-3xl lg:leading-snug xl:text-4xl xl:leading-relaxed xxl:text-5xl xxl:leading-[57px] ">Enjoy Your Favorite Food On Our Resturant</h3>
-                     <p className="text-stone text-xs mt-1 lg:text-sm leading-relaxed lg:mt-4 lg:leading-loose xl:text-base xl:leading-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, sit commodi repudiandae possimus vero voluptate officia alias atque ut fugit similique dolore aliquid ducimus deleniti enim saepe id! Voluptatum.</p>
+                 <div className="px-3 pt-8 md:-mt-8 md:px-2 lg:pt-12 xl:ml-20">
+                     <span className="text-amber text-sm sm:text-base md:text-xl font-serif xl:text-3xl xl:mb-2">About Us</span>
+                     <h3 className="text-stone text-2xl font-semibold sm:text-3xl md:text-3xl lg:text-3xl md:leading-snug xl:text-4xl xxl:text-5xl xxl:leading-[57px] ">Enjoy Your Favorite Food On Our Resturant</h3>
+                     <p className="text-stone text-sm mt-1 lg:text-sm leading-relaxed lg:mt-4 lg:leading-loose xl:text-base xl:leading-[35px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fugiat, sit commodi repudiandae possimus vero voluptate officia alias atque ut fugit similique dolore aliquid ducimus deleniti enim saepe id! Voluptatum.</p>
                      <button className="text-xs border-2 border-stone p-2 rounded text-stone mt-4 hover:bg-amber hover:text-stone cursor-pointer hover:border-amber xl:text-lg">Read More</button>
                  </div>
-                 <div className="absolute">
-                     <img src={chilli} className="w-10 h-7 -mt-[240px] ml-60 sm:w-20 sm:h-12 sm:-mt-[420px] sm:ml-10 md:-mt-[20px] md:ml-16"></img>
-                     <img src={noodle} className="w-16 h-10 mt-40 ml-44 sm:ml-[410px] sm:mt-52 md:ml-[620px] md:mt-60 lg:ml-[750px] lg:mt-64 lg:w-24 lg:h-12 xl:ml-[950px] xl:mt-72"></img>
+                 <div className="h-fit relative">
+                      <img src={chilli} className="w-10 h-7 -mt-[5vh] ml-[75%] sm:w-16 sm:h-12 sm:-mt-[74vh] sm:ml-[5%] md:-mt-[50vh] md:ml-[1%]"></img>
+                     <img src={noodle} className="w-16 h-10 mt-52 ml-44 sm:ml-[76%] sm:mt-80 md:ml-[620px] md:mt-60 lg:ml-[750px] lg:mt-64 lg:w-24 lg:h-12 xl:ml-[950px] xl:mt-72"></img>
                  </div>
              </div>
-
-             <div className="bg-black   pt-5 absolute pb-2 lg:-mt-2">
+               </div> */}
+              {/* <div className="mt-20 pb-2 lg:-mt-2">
                  <div className="bg-amber mx-2 px-2 lg:mx-5 sm:w-[480px] md:w-[680px] lg:w-[960px] relative overflow-hidden rounded md:flex xl:mx-7 xl:w-[1225px] xxl:w-[1540px]">
                      <div className="-ml-7 -mt-[13px] sm:-mt-[16px] sm:-ml-8 lg:-mt-[21px] lg:-ml-10 ">
                          <img src={leaf} className="w-44 h-40 sm:w-52 sm:h-48 lg:w-60 lg:h-60 xl:w-68 xl:h-68 xxl:w-72 xxl:h-72 xxl:-ml-0.5 xxl:-mt-1"></img>
@@ -293,7 +302,7 @@ const Hero = () => {
                      </div>
                  </div>
 
-             </div></div> 
+             </div></div>  */}
 
 
 {/* party or event */}
