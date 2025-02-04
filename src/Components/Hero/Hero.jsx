@@ -86,13 +86,13 @@ const Hero = () => {
         <div className="bg-black w-full overflow-x-hidden">
          <div className="">
         
-             <div className="relative h-[550px] bg-hero-pattern bg-cover bg-center sm:h-[500px] lg:h-[460px] xl:h-[500px] 
+             <div className="relative h-[550px] bg-hero-pattern bg-cover bg-center sm:h-fit 
               ">
                   <div className="absolute inset-0 bg-black opacity-50 "></div>
                 
            
 
-            <div className="pt-20 lg:mb-60 lg:grid lg:grid-cols-3 lg:pt-28 lg:pl-10 lg:gap-7 xl:pt-36">
+            <div className="pt-20 sm:pb-8 lg:pb-16 lg:grid lg:grid-cols-3 lg:pt-28 lg:pl-10 lg:gap-7 xl:pt-36">
                
                 <Slider {...mainSliderSettings} className="lg:mt-2">
                     {images.map((image,index) =>(
@@ -148,12 +148,12 @@ const Hero = () => {
              </div>
              </div> 
 
-             <div className="relative bg-restaurant-pic bg-cover h-[70vh] w-full lg:h-[400px] relative xl:h-[460px] ">
+             <div className="relative bg-restaurant-pic bg-cover h-[70vh] w-full sm:h-fit">
                    
                      {/* <img src={restaurant_bg} className="contrast-[0.25] h-[70vh] w-full xl:h-[460px] relative xxl:h-[500px]"></img> */}
                      <div className="absolute inset-0 backdrop-contrast-[0.25]"></div>
                 
-                 <div className=" pt-4 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
+                 <div className="pb-8 pt-4 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
                      <div className="text-center pt-2 relative">
                          <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
