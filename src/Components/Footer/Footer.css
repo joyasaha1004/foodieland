@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .footer-list li{
+        @apply cursor-pointer hover:text-amber
+    }
+    .footer-img img{
+        @apply w-6 h-6 lg:w-8 lg:h-8
+    }
+  }

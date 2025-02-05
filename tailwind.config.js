@@ -28,7 +28,8 @@ export default {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('../Assets/bg1.jpg')",
-        'restaurant-pic' : "url('../Assets/restaurant_bg.png')"
+        'restaurant-pic' : "url('../Assets/restaurant_bg.png')",
+        'footer-pic' : "url('../Assets/footer.png')"
        
       }
     },
