@@ -29,7 +29,8 @@ export default {
       backgroundImage: {
         'hero-pattern': "url('../Assets/bg1.jpg')",
         'restaurant-pic' : "url('../Assets/restaurant_bg.png')",
-        'footer-pic' : "url('../Assets/footer.png')"
+        'footer-pic' : "url('../Assets/footer.png')",
+        'offer-pic' : "url('../Assets/offer_bg.png')"
        
       }
     },

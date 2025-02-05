@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+    
+    .grid-col-2 img{
+        @apply sm:h-[250px] sm:w-[499px] md:h-[250px] xl:w-[900px]
+    }
+    .grid1 img{
+        @apply h-[95px] sm:h-[179px] md:h-[250px] xl:w-[800px]
+    }
+  }
