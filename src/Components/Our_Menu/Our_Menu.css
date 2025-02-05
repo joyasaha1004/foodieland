@@ -7,4 +7,7 @@
     .btn-primary {
       @apply ;
     }
+    .imglist{
+      @apply w-80 h-28 lg:h-36 xl:w-96 xl:h-44 xxl:w-[500px] xxl:h-52
+    }
   }

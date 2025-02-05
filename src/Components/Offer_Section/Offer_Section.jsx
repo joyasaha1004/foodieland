@@ -21,8 +21,7 @@ const Offer_Section = () => {
 
                     <div className=" pt-20 md:flex justify-self-center">
                
-                        <img src={offer_logo} className="w-60 h-48 -mt-5 -ml-2 sm:w-72 sm:h-52   sm:mb-7 md:-mt-5 md:w-96 md:h-72 lg:w-96 lg:h-80 xl:w-[370px] xl:h-[370px] xxl:w-[420px] 
-                         xxl:h-[420px]"
+                        <img src={offer_logo} className="w-60 h-48 -mt-5 -ml-2 sm:w-72 sm:h-52   sm:mb-7 md:-mt-5 md:w-96 md:h-72 lg:w-96 lg:h-80 xl:w-[370px] xl:h-[370px] xxl:w-[420px]  xxl:h-[420px]"
                          data-aos="flip-left"
                          ></img>
                     </div>

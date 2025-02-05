@@ -37,6 +37,7 @@ const Our_Menu = () => {
     const sliderRef = useRef(null);
   const settings = {
     dots: true,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -62,17 +63,17 @@ const Our_Menu = () => {
 } ;
  
     return (
-        <div className="w-[300px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] bg-black pt-5 pb-20 sm:-mt-7 md:-mt-60 lg:-mt-48">
+        <div className="overflow-x-hidden bg-black w-full pt-16 h-fit pb-20 lg:px-2">
          
            
-                 <div className="px-2 sm:p-4 lg:px-7 xl:w-[520px] xl:pt-16 xxl:w-[600px]">
+                 <div className="px-2 relative sm:px-4">
                      <p className="font-serif text-lg text-amber lg:text-xl lg:mb-1 xl:text-2xl xxl:text-3xl xl:mb-2">Our Menu</p>
-                     <h3 className="text-stone font-semibold text-xl md:text-2xl lg:text-3xl lg:mb-2 xl:text-4xl xxl:text-5xl xl:mb-4">Our Food Menu</h3>
-                     <span  className="text-stone text-[11px] md:text-[12px] lg:text-[14px] xl:text-[16px] xxl:text-[18px]">Introducing our tantalizing food menu,filled with exquisite flavours and culinary delights to satisfy every palate</span>
+                     <h3 className="text-stone font-semibold text-2xl mb-2 md:text-3xl lg:text-3xl lg:mb-2 xl:text-4xl xxl:text-5xl xl:mb-4">Our Food Menu</h3>
+                     <span  className="text-stone text-xs md:text-[12px] lg:text-[14px] xl:text-[16px] xxl:text-[18px]">Introducing our tantalizing food menu,filled with exquisite flavours and culinary delights to satisfy every palate</span>
                  </div>
 
- <div className="text-amber mt-4 px-2 mb-4 sm:px-4 lg:px-7 xl:ml-[460px] xxl:ml-[640px]">
-       <ul className="flex text-xs gap-2 flex-wrap lg:text-base xxl:text-lg">
+ <div className="text-amber mt-4 px-2 mb-4 sm:px-4 justify-self-end xxl:mt-6">
+       <ul className="flex text-xs gap-4 flex-wrap sm:gap-7 md:text-sm lg:text-base lg:gap-12 xl:gap-20 xl:text-lg xxl:gap-20 xxl:text-xl">
            <li onClick={() => handleListItemClick(0)} className="link">All Menu</li>
            <li onClick={() => handleListItemClick(1)}
            className="link">Breakfast</li>
@@ -82,11 +83,11 @@ const Our_Menu = () => {
           
        </ul>
       </div>
-                 <div className="md:px-1 lg:mt-9  xl:w-[1279px] xxl:w-[1600px]">
+                 <div className="md:px-1 lg:mt-4 ">
                    <Slider {...settings} ref={sliderRef}>
 
                     <div >
-                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 xxl:px-4">
+                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4">
                         
                          <img src={breakfast1} className="imglist"></img>
                          <img src={lunch5} className="imglist"></img>
