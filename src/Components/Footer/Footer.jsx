@@ -76,7 +76,7 @@ const Footer = () => {
 
                 <div>
 
-                    <ul className="nav-list flex flex-wrap px-2 pt-16 text-stone text-xs justify-self-center gap-4 sm:gap-8 sm:px-6 md:text-sm lg:text-base xl:gap-12 xxl:gap-16">
+                    <ul className="nav-list flex flex-wrap px-2 pt-16 text-stone text-xs justify-self-center gap-4 sm:gap-6 sm:px-6 md:text-sm lg:text-base xl:gap-12 xxl:gap-16">
 
             <li className=""><Link to="/foodieland">Home</Link></li>
             <li className=""><Link to="/offer">Offer</Link></li>
