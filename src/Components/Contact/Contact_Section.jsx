@@ -1,13 +1,12 @@
 import React from 'react'; 
 import "./Contact_Section.css"
-import contact_bg from "../Assets/contact_bg.png"
+
 
 const Contact_Section = () => {
     return (
         <div className="overflow-x-hidden w-full relative bg-black pb-20">
 
             <div className="bg-contact-bg relative w-full h-fit bg-cover bg-center pt-36 pb-40 lg:pt-48 lg:pb-52 xl:pt-64 xl:pb-64 xxl:pb-72">
-                {/* <img src={contact_bg} className="h-[300px] w-[300px] brightness-[0.5] sm:w-[500px]  md:w-[700px] lg:w-[1000px] xl:w-[1280px] xl:h-[400px] xxl:w-[1600px] xxl:h-[500px]"></img> */}
                 
                  <div className="relative text-stone text-center ">
  

@@ -70,12 +70,7 @@ img1:chef_icon,
 
 const ChefsPic = () => {
 
-  // let chefInfo = useRef();
-
-  // const change =()=>{
-  //   chefInfo.current.classList.remove("opacity-0");
-  //   chefInfo.current.classList.add("opacity-100");
-  // };
+ 
 let sliderRef = useRef(null);
   const next = () => {
     sliderRef.slickNext();

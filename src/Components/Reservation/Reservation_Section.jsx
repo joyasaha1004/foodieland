@@ -1,8 +1,7 @@
 import React from 'react';
-// import reservation_bg from "../Assets/reservation_bg.png";
  import reservation1 from "../Assets/reservation1.png";
  import booking from "../Assets/booking.png";
- import wood_bg from "../Assets/wood_bg.png";
+
 const Reservation_Section = () => {
     return (
         <div className="overflow-x-hidden  w-full bg-black pb-40">
@@ -10,7 +9,7 @@ const Reservation_Section = () => {
                 <div className="relative bg-reservation-bg w-full bg-cover bg-center h-fit pt-40 pb-24 sm:pb-28 md:pb-36 lg:pb-44 xl:pb-72">
 
                 <div className="absolute inset-0 bg-black opacity-50 "></div>
-                   {/* <img src={reservation_bg} className="brightness-[0.22] h-[300px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] md:h-[300px] lg:h-[400px] xl:h-[500px] xxl:h-[520px]"></img> */}
+                  
                     <div className="text-center text-stone relative -mt-10 px-2 sm:px-4 lg:mt-3 xl:mt-20">
                     <h3 className="text-3xl font-serif text-amber mb-2 md:mb-2 lg:text-4xl xl:text-5xl xxl:text-7xl">Visit Us,Make Your Reservation</h3>
                         <p className="text-xs lg:text-base xl:text-lg xxl:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam sequi ratione expedita, maxime dolores impedit?</p>
@@ -87,7 +86,7 @@ const Reservation_Section = () => {
 
             </div></div>
                    <div className="mt-9 relative bg-wood-bg w-full h-fit pb-10 lg:mt-20 xl:mt-16">
-                      {/* <img src={wood_bg} className="w-[300px] brightness-[0.5] h-[370px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xl:h-[450px] xxl:h-[500px] xxl:w-[1600px]"></img> */}
+                     
             <div className="text-center pt-7">
                 <h3 className="text-amber text-xl mb-2 font-semibold sm:text-2xl lg:text-3xl xl:text-4xl xl:mb-2 xxl:text-5xl xxl:mb-4">Or You Can Contact Us</h3>
                 <p className="text-stone text-[10px] tracking-widest sm:text-[12px] xl:text-[14px] xxl:text-[16px]">THERE ARE MULTIPLE WAYS TO CONTACT WITH US</p>

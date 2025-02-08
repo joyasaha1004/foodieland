@@ -1,6 +1,5 @@
 import React from 'react';
 import "./Offer_Section.css"
-import offer_bg from "../Assets/offer_bg.png";
 import offer_logo from "../Assets/offer_logo.png";
 
 import gallery1 from "../Assets/gallery1.png";
@@ -14,7 +13,7 @@ const Offer_Section = () => {
     return (
         <div className="w-full overflow-x-hidden bg-black relative">
             <div>
-                <div className=" relative bg-offer-pic bg-cover bg-center w-full h-fit pb-6">
+                <div className=" relative bg-offer-pic bg-cover bg-center w-full h-fit pb-6 xl:pb-10">
                     
          <div className="absolute inset-0 bg-black opacity-50 "></div>
                     <div className="md:flex relative lg:gap-10 md:pl-10 lg:pl-20 xl:pl-20 xl:pt-10 xxl:pl-28">
