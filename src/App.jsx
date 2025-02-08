@@ -35,7 +35,7 @@ function App() {
     <Route path="/menu" element={<Menu/>}/>
    
     <Route path="/reservation" element={<Reservation/>}/>
-    {/* <Route path="/contact" element={<Contact/>}/> */}
+     <Route path="/contact" element={<Contact/>}/>
   
      </Routes>
   

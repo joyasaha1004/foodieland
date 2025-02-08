@@ -34,7 +34,8 @@ export default {
         'offer-pic' : "url('../Assets/offer_bg.png')",
          'menu' : "url('../Assets/menu_bg.png')",
         'reservation-bg': "url('../Assets/reservation1.png')",
-        'wood-bg': "url('../Assets/wood_bg.png')"
+        'wood-bg': "url('../Assets/wood_bg.png')",
+        'contact-bg':"url('../Assets/contact_bg.png')",
        
       }
     },
