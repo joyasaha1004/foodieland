@@ -7,7 +7,7 @@ const Reservation_Section = () => {
     return (
         <div className="overflow-x-hidden  w-full bg-black pb-40">
             <div>
-                <div className="relative bg-reservation-bg w-full bg-cover bg-center h-fit pt-40 pb-24 md:pb-36 lg:pb-44 xl:pb-72">
+                <div className="relative bg-reservation-bg w-full bg-cover bg-center h-fit pt-40 pb-24 sm:pb-28 md:pb-36 lg:pb-44 xl:pb-72">
 
                 <div className="absolute inset-0 bg-black opacity-50 "></div>
                    {/* <img src={reservation_bg} className="brightness-[0.22] h-[300px] sm:w-[500px] md:w-[700px] lg:w-[1000px] xl:w-[1280px] xxl:w-[1600px] md:h-[300px] lg:h-[400px] xl:h-[500px] xxl:h-[520px]"></img> */}
