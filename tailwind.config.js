@@ -27,11 +27,14 @@ export default {
     },
     extend: {
       backgroundImage: {
+      
         'hero-pattern': "url('../Assets/bg1.jpg')",
         'restaurant-pic' : "url('../Assets/restaurant_bg.png')",
         'footer-pic' : "url('../Assets/footer.png')",
         'offer-pic' : "url('../Assets/offer_bg.png')",
-         'menu' : "url('../Assets/menu_bg.png')"
+         'menu' : "url('../Assets/menu_bg.png')",
+        'reservation-bg': "url('../Assets/reservation1.png')",
+        'wood-bg': "url('../Assets/wood_bg.png')"
        
       }
     },

@@ -24,7 +24,7 @@ const Navbar = () => {
               
                 
              
-            <div className="grid grid-cols-3 relative -left-3 flex mt-1  h-12 xl:h-16 xl:pt-2 xl:-left-1
+            <div className="grid grid-cols-2 xl:grid-cols-3 relative -left-3 flex mt-1  h-12 xl:h-16 xl:pt-2 xl:-left-1
             ">
                
                 <div className="flex font-sans ">
@@ -33,7 +33,7 @@ const Navbar = () => {
                    text-green xl:text-2xl  xxl:text-3xl xxl:mt-1">Foodie<span className="text-amber">Land</span></h1>
                 </div>
 
-                <div className="text-center opacity-0 xl:opacity-100 relative">
+                <div className="text-center hidden xl:block relative">
                    <ul className=" nav-list lg:text-base flex xl:absolute xl:top-0 -right-[320px] text-stone gap-x-10 lg:mt-3 xl:mt-3 
                    xl:text-lg xl:font-semibold xxl:text-xl xxl:gap-12">
                        <li><Link to="/foodieland">Home</Link></li>
@@ -44,7 +44,7 @@ const Navbar = () => {
                    </ul>
                </div>
 
-               <div className="py-0.5 justify-items-end">
+               <div className="py-0.5 relative justify-self-end">
              
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" onClick={toggleMenu} className="size-6  mt-1 xl:hidden">
   <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12H12m-8.25 5.25h16.5" />
