@@ -63,17 +63,17 @@ const Our_Menu = () => {
 } ;
  
     return (
-        <div className="overflow-x-hidden bg-black w-full pt-16 h-fit pb-20 lg:px-2">
+        <div className="overflow-x-hidden bg-black w-full pt-16 h-fit pb-20 lg:px-2 max-w-screen-2xl mx-auto">
          
            
                  <div className="px-2 relative sm:px-4">
-                     <p className="font-serif text-lg text-amber lg:text-xl lg:mb-1 xl:text-2xl xxl:text-3xl xl:mb-2">Our Menu</p>
-                     <h3 className="text-stone font-semibold text-2xl mb-2 md:text-3xl lg:text-3xl lg:mb-2 xl:text-4xl xxl:text-5xl xl:mb-4">Our Food Menu</h3>
-                     <span  className="text-stone text-xs md:text-[12px] lg:text-[14px] xl:text-[16px] xxl:text-[18px]">Introducing our tantalizing food menu,filled with exquisite flavours and culinary delights to satisfy every palate</span>
+                     <p className="font-serif text-lg text-amber lg:text-xl lg:mb-1 xl:text-2xl xl:mb-2">Our Menu</p>
+                     <h3 className="text-stone font-semibold text-2xl mb-2 md:text-3xl lg:text-3xl lg:mb-2 xl:text-4xl xl:mb-4">Our Food Menu</h3>
+                     <span  className="text-stone text-xs md:text-[12px] lg:text-[14px] xl:text-[16px] ">Introducing our tantalizing food menu,filled with exquisite flavours and culinary delights to satisfy every palate</span>
                  </div>
 
- <div className="text-amber mt-4 px-2 mb-4 sm:px-4 justify-self-end xxl:mt-6">
-       <ul className="flex text-xs gap-4 flex-wrap sm:gap-7 md:text-sm lg:text-base lg:gap-12 xl:gap-20 xl:text-lg xxl:gap-20 xxl:text-xl">
+ <div className="text-amber mt-4 px-2 mb-4 sm:mt-6 sm:px-4 md:mt-8 justify-self-end ">
+       <ul className="flex text-xs gap-4 flex-wrap sm:gap-7 md:text-sm lg:text-base lg:gap-12 xl:gap-20 xl:text-lg ">
            <li onClick={() => handleListItemClick(0)} className="link">All Menu</li>
            <li onClick={() => handleListItemClick(1)}
            className="link">Breakfast</li>
@@ -103,7 +103,7 @@ const Our_Menu = () => {
                      </div>
                      </div>
                    <div>
-                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 xxl:px-4">
+                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 ">
                          <img src={breakfast5} className="imglist"></img>
                          <img src={breakfast2} className="imglist"></img>
                          <img src={breakfast4} className="imglist"></img>
@@ -118,7 +118,7 @@ const Our_Menu = () => {
                        </div>
                    
                    <div>
-                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 xxl:px-4">
+                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 ">
                          <img src={lunch1} className="imglist"></img>
                          <img src={lunch2} className="imglist"></img>
                          <img src={lunch3} className="imglist"></img>
@@ -132,7 +132,7 @@ const Our_Menu = () => {
                      </div>
 
                        <div>
-                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 xxl:px-4">
+                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 ">
                          <img src={dinner1} className="imglist"></img>
                          <img src={dinner2} className="imglist"></img>
                          <img src={dinner3} className="imglist"></img>
@@ -146,7 +146,7 @@ const Our_Menu = () => {
                      </div> 
 
                      <div>
-                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 xxl:px-4">
+                       <div className="grid grid-cols-2 gap-2 px-2 sm:grid-cols-3 xl:grid-cols-4 ">
                          <img src={party1} className="imglist "></img>
                          <img src={party2} className="imglist"></img>
                          <img src={party3} className="imglist"></img>

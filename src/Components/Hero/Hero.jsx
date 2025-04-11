@@ -22,20 +22,7 @@ import party from "../Assets/party.png";
 import event from "../Assets/event.png";
 import checkbox from "../Assets/check-box.svg"
 
-// const PlateList = [
-//     {
-//         img:plate1
-//     },
-//     {
-//         img:plate2
-//     },
-//     {
-//         img:plate3
-//     },
-//     {
-//         img:food10
-//     }
-// ]
+
 
 const Hero = () => {
 
@@ -83,27 +70,27 @@ const Hero = () => {
        
      } ;
     return (
-        <div className="bg-black w-full overflow-x-hidden">
+        <div className="bg-black w-full overflow-x-hidden max-w-screen-2xl mx-auto">
          <div className="">
         
-             <div className="relative h-fit bg-hero-pattern bg-cover bg-center pb-7 xl:pb-12 xxl:pb-20
+             <div className="relative h-fit bg-hero-pattern bg-cover bg-center pb-7 xl:pb-12
               ">
                   <div className="absolute inset-0 bg-black opacity-50 "></div>
                 
            
 
-            <div className="pt-20 sm:pb-8 lg:pb-16 lg:grid lg:grid-cols-3 lg:pt-40 lg:pl-10 lg:gap-7 xl:pt-52">
+            <div className="pt-20 sm:pb-8 lg:pb-16 lg:grid lg:grid-cols-3 lg:pt-32 lg:pl-10 lg:gap-7 xl:pt-36">
                
-                <Slider {...mainSliderSettings} className="lg:pt-3 xl:-mt-7 xl:-mt-4">
+                <Slider {...mainSliderSettings} className="lg:self-end ">
                     {images.map((image,index) =>(
-                         <div className="relative  mb-10 place-items-center "
+                         <div className="relative mb-10  place-items-center "
                          data-aos="zoom-in" key={index} >
                          
                                <img src={image} alt={`Slide ${index + 1}`} style={{ width: "" }}  className="relative w-60 xl:w-72"></img>
                           
                          
-                           <div className="w-10 h-10 bg-amber rounded-full border border-stone absolute top-2 left-[54%]">
-                               <p className="text-xs text-orange text-center">20% Off</p>
+                           <div className="w-10 h-10 bg-amber rounded-full border border-stone absolute top-2 left-[54%] xl:w-12 xl:h-12">
+                               <p className="text-xs text-orange text-center xl:text-sm">20% Off</p>
                            </div>
                            </div> 
 
@@ -112,18 +99,18 @@ const Hero = () => {
             
                 </Slider>
    
-                <div className="relative px-2 sm:px-4 lg:col-span-2">
+                <div className="relative lg:self-start px-2 sm:px-4 lg:col-span-2">
                    <div className="text-stone ">
                        <h3 className="text-3xl font-bold md:text-3xl 
-                       leading-snug lg:text-5xl lg:leading-snug xl:text-[50px] xxl:text-[67px]">Have A Delicious Food With Us</h3>
-                       <p className="text-sm leading-normal mt-2 lg:text-sm xxl:text-base">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
+                       leading-snug lg:text-5xl lg:leading-snug xl:text-6xl xl:leading-normal">Have A Delicious Food With Us</h3>
+                       <p className="text-sm leading-normal mt-2 lg:text-sm ">A restaurant is a place where we eat food and create good memories with family, friend and other loving person</p>
                    </div>
 
                    <div className="mt-4 flex  gap-2 relative">
                        <button className="border-orange border-1 text-orange bg-amber text-xs p-2 rounded hover:bg-stone hover:border-orange hover:border-1 lg:text-sm 
                        cursor-pointer xl:text-base">View Our Menu</button>
                        
-                       <button className="text-green border-green border p-2 text-xs rounded hover:bg-green hover:text-stone lg:text-sm cursor-pointer xxl:text-base">Reservation</button>
+                       <button className="text-green border-green border p-2 text-xs rounded hover:bg-green hover:text-stone lg:text-sm cursor-pointer ">Reservation</button>
                      
                    </div>
                    </div> 
@@ -151,19 +138,19 @@ const Hero = () => {
                     
                      <div className="absolute inset-0 backdrop-contrast-[0.25]"></div>
                 
-                 <div className="pb-8 pt-4 lg:-ml-5 xl:-top-[440px] xxl:-top-[460px]">
+                 <div className="pb-8 pt-4 lg:-ml-5 xl:-top-[440px]">
                      <div className="text-center pt-2 relative">
-                         <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl xxl:text-3xl">Table Reservation</p>
+                         <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl ">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
                      <div className="justify-items-center w-full relative  text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
                        <div className="md:flex flex-wrap sm:place-content-center sm:gap-2 lg:gap-4">
                     <div>
-                        <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber xxl:h-10" placeholder="Name"></input>
+                        <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber" placeholder="Name"></input>
                     </div>
                      <div className=" flex flex-wrap gap-2 place-content-center relative">
                          <div>
-                         <select className=" h-7  rounded lg:h-8 xl:w-24 hover:border-2  xl:h-9 xxl:h-10 hover:border-amber ">
+                         <select className=" h-7  rounded lg:h-8 xl:w-24 hover:border-2  xl:h-9  hover:border-amber ">
                              <option >Child</option>
                              <option value="1">1</option>
                              <option value="2">2</option>
@@ -178,7 +165,7 @@ const Hero = () => {
                          </select>
                            </div>
                            <div>
-                         <select className=" h-7  rounded md:w-20 lg:w-24 lg:h-8 xl:w-28 hover:border-2 hover:border-amber xl:h-9 xxl:h-10 xxl:w-40">
+                         <select className=" h-7  rounded md:w-20 lg:w-24 lg:h-8 xl:w-28 hover:border-2 hover:border-amber xl:h-9 ">
                              <option >Person</option>
                              <option value="1">1</option>
                              <option value="2">2</option>
@@ -198,13 +185,13 @@ const Hero = () => {
                          </select>
 </div>
                           <div>
-                         <input type="date" placeholder="Time" className="h-7 lg:h-8 rounded hover:border-2 hover:border-amber xl:text-lg xl:h-9 xxl:h-10 "></input>
+                         <input type="date" placeholder="Time" className="h-7 lg:h-8 rounded hover:border-2 hover:border-amber xl:text-lg xl:h-9 "></input>
                          
                          </div>
                          </div>
  </div>
                         
-                       <div className="w-full md:w-[80%] lg:w-[60%] xxl:w-[50%]">
+                       <div className="w-full md:w-[80%] lg:w-[60%] ">
                          <textarea className="mt-5 w-full rounded h-28 text-center  xl:h-36 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
                         </div>
                          
