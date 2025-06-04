@@ -30,7 +30,7 @@ const Footer = () => {
 
                 <div>
 
-                    <ul className="nav-list flex flex-wrap px-2 pt-16 text-stone text-xs justify-self-center gap-4 sm:gap-6 sm:px-4 md:text-sm lg:gap-10 lg:text-base xl:gap-12 ">
+                    <ul className="nav-list flex flex-wrap px-2 pt-16 text-stone text-xs justify-center gap-4 sm:gap-6 sm:px-4 md:text-sm lg:gap-10 lg:text-base xl:gap-12 ">
 
             <li className=""><Link to="/foodieland">Home</Link></li>
             <li className=""><Link to="/offer">Offer</Link></li>
@@ -41,7 +41,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div className="flex footer-img mt-7 justify-self-center gap-4">
+                <div className="flex footer-img mt-7 justify-center gap-4">
 
                 <img src={facebook} className=""></img>
                <img src={instragram} className=""></img>

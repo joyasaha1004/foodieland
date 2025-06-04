@@ -14,14 +14,14 @@ const BlogList=[{
 
     img:blog1,
     tittle:"Restaurant",
-    heading:"How to start Restaurant Business in 2023 ",
+    heading:"How to start Restaurant Business",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 
 },
    {
        img:blog2,
        tittle:"Restaurant",
-       heading:"Enjoy an exceptional journey of taste of joy.",
+       heading:"Enjoy an exceptional journey of joy.",
        para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 
    },
@@ -29,19 +29,19 @@ const BlogList=[{
    {
     img:blog3,
     tittle:"Restaurant",
-    heading:"Explore Taste & That Best Quality Make .",
+    heading:"Explore Taste & That Best Quality Make.",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
    },
 {
     img:blog4,
     tittle:"Restaurant",
-    heading:"How to start Restaurant Business in 2023 ",
+    heading:"How to start Restaurant Business ",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 },
 {
     img:blog5,
     tittle:"Restaurant",
-    heading:"Enjoy an exceptional journey of taste of joy.",
+    heading:"Enjoy an exceptional journey of joy.",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 },
 {
@@ -64,7 +64,9 @@ const Blog = () => {
   };
 
     var settings = {
+     
         dots: false,
+        arrows:true,
         infinite: true,
         speed: 500,
         slidesToShow: 3,
@@ -112,49 +114,49 @@ const Blog = () => {
         <div className="overflow-x-hidden relative bg-black max-w-screen-2xl mx-auto pt-7 pb-12 lg:pt-12 xl:pb-24">
             <div>
                 <div className="mb-10 px-2 text-center ">
-            <p className="text-amber font-serif lg:text-lg xl:text-2xl ">Our Blog</p>
+            <p className="text-amber font-serif text-lg ">Our Blog</p>
                  <h3 className="text-lg font-semibold text-stone sm:text-xl lg:text-3xl xl:text-4xl xl:mt-2 ">Know More About The Article</h3>
                 </div>
 
-                <div className="w-52 justify-self-center sm:w-60 md:w-[465px] lg:w-[600px] xl:mt-12 xl:w-[1000px] ">
+                <div className="w-full flex justify-center xl:mt-12">
                 
                 <Slider ref={slider => {
           sliderRef = slider;
         }}
-        {...settings}>
+        {...settings}  className=' w-[80%] sm:w-[70%] lg:w-[80%] xl:w-[90%] gap-10 sm:px-2'>
             
-            {BlogList.map((data)=>(
+            {BlogList.map((data,i)=>(
+                <div key={i} className='relative px-3 '>
+                <div className="bg-gray h-fit pb-2 relative  text-stone rounded ">
+                    <div className=''>
+                        <img src={data.img} className="h-[100px] w-full lg:h-[120px]"></img>
 
-                <div className=" text-stone rounded h-[300px] sm:px-3 sm:h-[350px] lg:px-7 xl:px-8 ">
-                    <div>
-                        <img src={data.img} className="h-[100px] w-[250px]  lg:h-[120px] xl:w-[270px] xl:h-[150px] "></img>
-
-                        <div className="w-10 bg-stone px-1 rounded -mt-[100px] sm:-mt-[100px] relative xl:w-16 xl:leading-5 lg:-mt-[120px] xl:text-center xl:py-2 xl:-mt-[150px]">
-                            <p className="text-amber text-[10px] xl:text-[16px]">2023 Dec 12</p>
+                        <div className=" bg-stone px-1 rounded absolute top-0   xl:text-center xl:py-2 ">
+                            <p className="text-amber text-[10px] xl:text-[16px]">2023<br></br> Dec 12</p>
                         </div>
                     </div>
 
-                    <div className="bg-gray pt-20 py-3 px-2 sm:leading-5 lg:pt-24 xl:pt-24">
-                        <p className="text-sm font-serif text-amber lg:text-base xl:text-lg ">{data.tittle}</p>
-                        <h3 className="text-sm font-semibold sm:mb-1 lg:text-lg xl:text-xl">{data.heading}</h3>
-                         <span className="text-[10px] text-stone mb-2 sm:leading-3 xl:text-[12px] ">{data.para}</span>
+                    <div className=" py-3 px-2 sm:leading-5 ">
+                        <p className="text-base font-serif text-amber lg:text-base xl:text-lg ">{data.tittle}</p>
+                        <h3 className="text-sm font-semibold sm:mb-1 sm:text-base lg:text-lg xl:text-xl">{data.heading}</h3>
+                         <span className="text-xs text-stone mb-2 sm:leading-3 sm:mb-2 lg:text-xs ">{data.para}</span>
+                        </div>
                         
-                          <div className="mt-2 ">
-                  <hr classNamE=""></hr>
-                  <div className="flex xxl:pt-2">
-                   <p className="text-xs text-amber mt-1 underline underline-offset-3 cursor-pointer sm:text-[9px] xl:text-[12px]">Read More</p>
-                   <div className="flex mt-2 ml-12 cursor-pointer sm:ml-20 md:ml-20 lg:ml-28 xl:ml-24 ">
+                 
+                  <div className="flex mx-2 border-t-2 border-state  justify-between">
+                   <p className="text-xs text-amber mt-1 underline underline-offset-3 cursor-pointer ">Read More</p>
+                   <div className="flex cursor-pointer mt-2">
                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-4 sm:size-3 xxl:size-5">
   <path strokeLinecap="round" strokeLinejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155" />
 </svg>
 
-<span className="text-[9px] sm:-mt-1 xl:text-[12px] ">10 Comments</span> 
+<span className=" text-[11px] sm:-mt-1">10 Comments</span> 
                    </div></div>
-                    </div>
+                    
                          
-                    </div>
+                    {/* </div> */}
 
-
+</div>
                 </div>
             ))}
 

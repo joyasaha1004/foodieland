@@ -53,7 +53,7 @@ const Hero = () => {
       infinite: false,
       arrows: false,
      }
-    const images = [plate1, plate2, plate3,food10];
+    const images = [plate1, plate2, plate3];
   
 
     var settings = {
@@ -70,7 +70,7 @@ const Hero = () => {
        
      } ;
     return (
-        <div className="bg-black w-full overflow-x-hidden max-w-screen-2xl mx-auto">
+       <div className="bg-black w-full overflow-x-hidden max-w-screen-2xl mx-auto">
          <div className="">
         
              <div className="relative h-fit bg-hero-pattern bg-cover bg-center pb-7 xl:pb-12
@@ -79,18 +79,19 @@ const Hero = () => {
                 
            
 
-            <div className="pt-20 sm:pb-8 lg:pb-16 lg:grid lg:grid-cols-3 lg:pt-32 lg:pl-10 lg:gap-7 xl:pt-36">
+            <div className="pt-20 sm:pb-8 lg:pb-16 lg:grid lg:grid-cols-3 lg:pt-32 lg:pl-8 lg:gap-7 xl:pt-36">
                
-                <Slider {...mainSliderSettings} className="lg:self-end ">
+                <Slider {...mainSliderSettings} className=" lg:self-center  ">
                     {images.map((image,index) =>(
-                         <div className="relative mb-10  place-items-center "
-                         data-aos="zoom-in" key={index} >
+                         <div className="relative mb-10 w-full flex align-center sm:px-8 md:px-32 lg:px-0"
+                        //  data-aos="zoom-in" 
+                         key={index} >
                          
-                               <img src={image} alt={`Slide ${index + 1}`} style={{ width: "" }}  className="relative w-60 xl:w-72"></img>
+                               <img src={image} alt={`Slide ${index + 1}`} style={{ width: "" }}  className="relative w-full lg:w-full"></img>
                           
                          
-                           <div className="w-10 h-10 bg-amber rounded-full border border-stone absolute top-2 left-[54%] xl:w-12 xl:h-12">
-                               <p className="text-xs text-orange text-center xl:text-sm">20% Off</p>
+                           <div className="w-10 h-10 bg-amber rounded-full border sm:w-12 sm:h-12 border-stone absolute top-2 left-[54%] ">
+                               <p className="text-xs text-orange sm:text-sm text-center ">20% Off</p>
                            </div>
                            </div> 
 
@@ -140,10 +141,10 @@ const Hero = () => {
                 
                  <div className="pb-8 pt-4 lg:-ml-5 xl:-top-[440px]">
                      <div className="text-center pt-2 relative">
-                         <p className="text-sm text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl ">Table Reservation</p>
+                         <p className="text-lg text-amber sm:text-base lg:text-lg font-serif tracking-widest xl:text-2xl ">Table Reservation</p>
                          <span className="text-xl font-semibold text-stone sm:text-2xl lg:text-3xl lg:font-semibold xl:text-4xl ">BOOK YOUR TABLE NOW</span>
                      </div>
-                     <div className="justify-items-center w-full relative  text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
+                     <div className=" w-full relative  text-sm pt-3 sm:pt-0 px-2  lg:text-base xl:text-lg">
                        <div className="md:flex flex-wrap sm:place-content-center sm:gap-2 lg:gap-4">
                     <div>
                         <input type="text" className="w-full h-7 rounded text-center sm:mt-5 mb-5 lg:h-8  xl:h-9 hover:border-2 hover:border-amber" placeholder="Name"></input>
@@ -183,7 +184,7 @@ const Hero = () => {
                              <option value="15">15</option>
                             
                          </select>
-</div>
+        </div>
                           <div>
                          <input type="date" placeholder="Time" className="h-7 lg:h-8 rounded hover:border-2 hover:border-amber xl:text-lg xl:h-9 "></input>
                          
@@ -191,12 +192,14 @@ const Hero = () => {
                          </div>
  </div>
                         
-                       <div className="w-full md:w-[80%] lg:w-[60%] ">
-                         <textarea className="mt-5 w-full rounded h-28 text-center  xl:h-36 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
+                       <div className="w-full flex justify-center">
+                         <textarea className="mt-5 w-full rounded h-28 text-center md:w-[80%] lg:w-[70%] lg:h-48 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
                         </div>
-                         
-                     <button className="bg-black text-stone rounded mt-2 p-2 text-sm hover:bg-amber sm:mt-4  xl:text-lg ">Conform</button>
-                     </div>
+                        {/* </div>  */}
+                            <div className='w-full flex justify-center'>
+                     <button className="bg-black  text-stone rounded mt-2 p-2 text-sm hover:bg-amber sm:mt-4  xl:text-lg ">Conform</button>
+
+                     </div></div>
                  </div>
              </div>
 

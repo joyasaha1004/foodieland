@@ -19,8 +19,10 @@ const Reservation_Section = () => {
                  
 
                  <div className="">
-                 <div className="mt-20 relative justify-items-center md:mt-24 lg:grid grid-cols-3  lg:mt-28 xl:mt-32 ">
-                    <img src={reservation1} className="w-40 h-56  relative md:w-52 md:h-64 lg:w-60 lg:h-80 xl:w-72 xl:h-[390px] lg:mt-4 "></img>
+                 <div className="mt-20 relative  md:mt-24 lg:grid grid-cols-3  lg:mt-28 xl:mt-32 ">
+                    <div className='flex  justify-center'>
+                    <img src={reservation1} className="w-40 h-56   relative md:w-52 md:h-64 lg:w-60 lg:h-80 xl:w-72 xl:h-[390px] lg:mt-4 "></img>
+                    </div>
                     <div className="col-span-2">
                     <div className="text-center px-2 pt-5 ">
                         <h3 className="text-amber text-xl mb-2 font-semibold sm:text-2xl lg:text-3xl xl:text-4xl xl:mb-2 ">Book Your Table Today</h3>
@@ -74,24 +76,26 @@ const Reservation_Section = () => {
                          </div>
                          </div>
  </div>
-                         <div className="w-full md:w-[100%] lg:w-[80%] ">
+                         <div className="w-full flex justify-center ">
                        
-                         <textarea className="mt-5 w-full rounded h-28 text-center  xl:h-36 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
+                         <textarea className="mt-5 w-full rounded h-28 text-center lg:w-[80%] lg:h-36 hover:border-2  hover:border-amber " placeholder="Special Message"></textarea>
                         
                          </div>
+
+                         <div className='flex justify-center'>
                      <button className="bg-amber text-stone rounded mt-4 p-2 text-sm hover:bg-amber sm:mt-4  xl:text-lg ">MAKE YOUR RESERVATION</button>
-                     </div>
+                     </div></div>
                  </div> 
                </div>
 
             </div></div>
-                   <div className="mt-9 relative bg-wood-bg w-full h-fit pb-10 lg:mt-20 xl:mt-16">
+                   <div className="mt-9 relative bg-wood-bg w-full h-fit pb-10 lg:mt-24 ">
                      
             <div className="text-center pt-7">
                 <h3 className="text-amber text-xl mb-2 font-semibold sm:text-2xl lg:text-3xl xl:text-4xl xl:mb-2 ">Or You Can Contact Us</h3>
                 <p className="text-stone text-[10px] tracking-widest sm:text-[12px] xl:text-[14px] ">THERE ARE MULTIPLE WAYS TO CONTACT WITH US</p>
             </div>
-<div className="relative justify-self-center mt-10 sm:mt-12">
+<div className="relative flex justify-center mt-10 sm:mt-12">
                     <img src={booking} className="w-28 h-28 relative md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-52 xl:h-52 "></img>
                 </div>
             <div className="text-stone mt-7 px-2 relative place-content-center text-center  flex-wrap gap-2 sm:justify-between md:flex md:mt-10 md:px-4 lg:px-6 xl:px-10">
