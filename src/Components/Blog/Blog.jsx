@@ -21,7 +21,7 @@ const BlogList=[{
    {
        img:blog2,
        tittle:"Restaurant",
-       heading:"Enjoy an exceptional journey of joy.",
+       heading:"How to start Restaurant Business",
        para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 
    },
@@ -29,7 +29,7 @@ const BlogList=[{
    {
     img:blog3,
     tittle:"Restaurant",
-    heading:"Explore Taste & That Best Quality Make.",
+    heading:"How to start Restaurant Business",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
    },
 {
@@ -41,13 +41,13 @@ const BlogList=[{
 {
     img:blog5,
     tittle:"Restaurant",
-    heading:"Enjoy an exceptional journey of joy.",
+    heading:"How to start Restaurant Business",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 },
 {
     img:blog6,
     tittle:"Restaurant",
-    heading:"Explore Taste & That Best Quality Make.",
+    heading:"How to start Restaurant Business",
     para:"A great commerce experience cannot be distilled to a single number.It's not a Lighthouse score.",
 },
 
@@ -114,7 +114,7 @@ const Blog = () => {
         <div className="overflow-x-hidden relative bg-black max-w-screen-2xl mx-auto pt-7 pb-12 lg:pt-12 xl:pb-24">
             <div>
                 <div className="mb-10 px-2 text-center ">
-            <p className="text-amber font-serif text-lg ">Our Blog</p>
+            <p className="text-amber font-serif text-lg md:text-xl xl:text-3xl">Our Blog</p>
                  <h3 className="text-lg font-semibold text-stone sm:text-xl lg:text-3xl xl:text-4xl xl:mt-2 ">Know More About The Article</h3>
                 </div>
 
@@ -132,7 +132,7 @@ const Blog = () => {
                         <img src={data.img} className="h-[100px] w-full lg:h-[120px]"></img>
 
                         <div className=" bg-stone px-1 rounded absolute top-0   xl:text-center xl:py-2 ">
-                            <p className="text-amber text-[10px] xl:text-[16px]">2023<br></br> Dec 12</p>
+                            <p className="text-amber text-[10px] xl:text-xs">2023<br></br> Dec 12</p>
                         </div>
                     </div>
 
