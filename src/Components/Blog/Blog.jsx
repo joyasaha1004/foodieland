@@ -123,7 +123,7 @@ const Blog = () => {
                 <Slider ref={slider => {
           sliderRef = slider;
         }}
-        {...settings}  className=' w-[80%] sm:w-[70%] lg:w-[80%] xl:w-[90%] gap-10 sm:px-2'>
+        {...settings}  className=' w-[80%] sm:w-[85%] xl:w-[90%] gap-10 sm:px-2'>
             
             {BlogList.map((data,i)=>(
                 <div key={i} className='relative px-3 '>
